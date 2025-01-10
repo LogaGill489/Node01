@@ -2,7 +2,13 @@
 //running scripts are disabled:
 //Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
 
-export default {
+//when installing packages, using the URL from a github will tell npm that you
+//want that package directly from the Github repo, example:
+//nongit -> npm i express
+//github -> npm i expressjs/express
+//https://github.com/expressjs/express
+
+export default { 
     f1: () => { //function #1
         console.log('Hello');
      },
