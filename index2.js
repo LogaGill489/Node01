@@ -9,3 +9,8 @@ require('./index.js'); //reads from the cache previously
 require('./index.js'); //attained from the first require
 
 //only outputs the other file one time
+
+require('./index.js')(); //returns a new instance of the function
+                         //declared in module.exports ... each time
+require('./index.js')();
+require('./index.js')();

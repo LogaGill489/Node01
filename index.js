@@ -9,9 +9,10 @@ console.dir(process, { depth: 0 }); //outputs the first value in each process (i
 // console.log(arguments);
 //return ...
 // })()
-
-function X() {
-    console.log(arguments); //returns arguements passed to X
+module.exports = () => {
+    function X() {
+        console.log(arguments); //returns arguements passed to X
+    }
+    
+    X(1, 7, 9);
 }
-
-X(1, 7, 9);
