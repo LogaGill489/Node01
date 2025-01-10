@@ -6,7 +6,7 @@ console.dir(process, { depth: 0 }); //outputs the first value in each process (i
 */
 
 // (function(exports, require, module, __filename, __dirname) {
-console.log(arguments);
+// console.log(arguments);
 //return ...
 // })()
 
