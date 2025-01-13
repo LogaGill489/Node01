@@ -1,0 +1,39 @@
+
+
+shell command that allows access in the event that running scripts are disabled:
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+
+when installing packages, using the URL from a github will tell npm that you
+want that package directly from the Github repo, example:
+nongit -> npm i express
+github -> npm i expressjs/express
+https://github.com/expressjs/express
+
+you can also remove a package by using the command
+-> npm uninstall <package>
+
+important:
+in package.json, under the script section
+writing "start": "run code", i.e.: "start": "node .\\server.js"
+we can run this by simply running the command npm start
+
+npx is a name we can use in place of npm to help with certain commands
+when running a certain command, such as:
+
+-> npm i -g reactful && reactful new project
+
+we create a new project, however if we attempt to create another new reactful project
+later, it uses the non-updated reactful library that was installed locally.
+instead, using:
+
+-> npx reactful new project
+
+installs a temporary fresh instance of the library, runs the command, then uninstalls that,
+meaning that the latest version is used.
+
+npx can also be used to locate commands barried in files, such as when using the
+jslint library, to run the jslint command you need to be in the node_modules/.bin directory, i.e.
+
+-> ./node_modules/.bin/eslint -h
+vs 
+-> npx eslint -h
