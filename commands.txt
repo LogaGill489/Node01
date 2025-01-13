@@ -1,4 +1,7 @@
+This is my txt file that stores the commands that I've learned, with an explaination
+to how each one works.
 
+-------------------------------------------------------------------------------------
 
 shell command that allows access in the event that running scripts are disabled:
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
@@ -37,3 +40,7 @@ jslint library, to run the jslint command you need to be in the node_modules/.bi
 -> ./node_modules/.bin/eslint -h
 vs 
 -> npx eslint -h
+
+similarly, this can be done with the yarn library if installed and if it is saved as a script (see package.json)
+
+-> yarn eslint -h
