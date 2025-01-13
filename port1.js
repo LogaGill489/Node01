@@ -8,6 +8,8 @@
 //github -> npm i expressjs/express
 //https://github.com/expressjs/express
 
+//you can also remove a package by using the command -> npm uninstall <package>
+
 export default { 
     f1: () => { //function #1
         console.log('Hello');

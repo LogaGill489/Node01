@@ -4,7 +4,8 @@
   "description": "This repo contains the files that I used to learn various aspects of JavaScript\r and Node.js. It includes a lot of key fundamentals used in modern js.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .\\server.js"
   },
   "keywords": [],
   "author": "",
