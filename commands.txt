@@ -44,3 +44,14 @@ vs
 similarly, this can be done with the yarn library if installed and if it is saved as a script (see package.json)
 
 -> yarn eslint -h
+
+---------------------------------------------------------
+
+when running a server, if you install nodemon, and use that library when running, it automatically updates your
+server when you change things in the code
+
+instead of:
+-> node .\expressServer.js
+
+run:
+-> nodemon .\expressServer.js
