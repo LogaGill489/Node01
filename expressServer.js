@@ -7,6 +7,13 @@ server.listen(3000);
 server.get('/', (req, res) => {
     res.send({message: 'Hello Non Favicon'});
     console.log(req.url);
+
+    //collects the ip of any request sent to the website
+    var ip = req.socket.remoteAddress;
+    if (ip.substring(0, 7) == "::ffff:") { //removes the ::ffff: in the event that the ip is the IPv6 version of an IPv4 address
+        ip = ip.substring(7);
+    }
+    console.log(ip);
 });
 
 //* replaces .ico, working as a generic domain
@@ -16,6 +23,7 @@ server.get('/favicon.*', (req, res) => {
     console.log(req.url);
 });
 
+/*
 //callback method
 exec('ls /', (err, stdout, stderr) => {
     if (err) {
@@ -36,3 +44,4 @@ const main = async () => {
 }
 
 main();
+*/
