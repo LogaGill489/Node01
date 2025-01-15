@@ -5,7 +5,7 @@ const server = express();
 server.listen(3000);
 
 server.get('/', (req, res) => {
-    res.send({message: 'Hello Non Favicon'});
+    //res.send({message: 'Hello Non Favicon'});
     console.log(req.url);
 
     //collects the ip of any request sent to the website
@@ -14,6 +14,8 @@ server.get('/', (req, res) => {
         ip = ip.substring(7);
     }
     console.log(ip);
+    //res.send({message: 'Your Ip address is:'});
+    res.send({ip});
 });
 
 //* replaces .ico, working as a generic domain
